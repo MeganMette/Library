@@ -1,0 +1,47 @@
+package library;
+
+public class Runner {
+	public static void main(String[] args) {
+		Books book1 = new Books();
+		Books book2 = new Books();
+		Books book3 = new Books();
+		Books book4 = new Books();
+		Books book5 = new Books();
+
+		GovernmentDocuments governmentdocument1 = new GovernmentDocuments();
+		GovernmentDocuments governmentdocument2 = new GovernmentDocuments();
+		GovernmentDocuments governmentdocument3 = new GovernmentDocuments();
+		GovernmentDocuments governmentdocument4 = new GovernmentDocuments();
+		GovernmentDocuments governmentdocument5 = new GovernmentDocuments();
+
+		Dissertations dissertation1 = new Dissertations();
+		Dissertations dissertation2 = new Dissertations();
+		Dissertations dissertation3 = new Dissertations();
+		Dissertations dissertation4 = new Dissertations();
+		Dissertations dissertation5 = new Dissertations();
+
+		Library library = new Library();
+
+		library.addArticle(book1);
+		library.addArticle(book2);
+		library.addArticle(book3);
+		library.addArticle(book4);
+		library.addArticle(book5);
+		library.addArticle(governmentdocument1);
+		library.addArticle(governmentdocument2);
+		library.addArticle(governmentdocument3);
+		library.addArticle(governmentdocument4);
+		library.addArticle(governmentdocument5);
+		library.addArticle(dissertation1);
+		library.addArticle(dissertation2);
+		library.addArticle(dissertation3);
+		library.addArticle(dissertation4);
+		library.addArticle(dissertation5);
+
+		Library.removeArticlesById(int[].class);
+
+		Library.calculateLateFeeBill();
+
+	}
+
+}
