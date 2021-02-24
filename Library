@@ -1,0 +1,74 @@
+package library;
+
+import java.time.Clock;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Library {
+	private static List<Articles> articles = new ArrayList<>();
+	private List<Person> person = new ArrayList<>();
+
+	private static final String Articles = null;
+
+	private final String Library = null;
+
+	public boolean addPerson(Person person, int personCount) {
+		person.setPersonID(personCount++);
+		return this.person.add(person);
+	}
+
+	public boolean removePerson(Person person, int personCount) {
+		person.setPersonID(personCount--);
+		return this.person.remove(person);
+	}
+
+	public boolean removePersonById(int id) {
+		for (Person p : this.person) {
+			if (p.getPersonID() == id) {
+				return this.removePersonById(id);
+			}
+		}
+		return false;
+	}
+
+	public String findArticleByArticleId(int articleId) {
+		for (Articles article : articles) {
+			if (article.getArticleID() == articleId) {
+				return Articles;
+			}
+		}
+		return Library;
+	}
+
+	public final class LocalDate {
+		private Object articles;
+
+		void now(Clock clock) {
+
+		}
+
+	}
+
+	public static String calculateLateFeeBill() {
+		for (Articles article : articles) {
+			if (articles instanceof Books)
+				;
+
+			System.out.println("You are returning your article late. You need to pay a late fee of £.");
+		}
+		return null;
+	}
+
+	public String getLibrary() {
+		return Library;
+	}
+
+	public void addArticle(Articles articles) {
+		this.articles.add(articles);
+	}
+
+	public static void removeArticlesById(Class<int[]> class1) {
+
+	}
+
+}
